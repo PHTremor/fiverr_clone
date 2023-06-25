@@ -1,0 +1,17 @@
+.error{
+    // width: 1400px;
+    height: 500px;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+    p{
+        i{
+            font-weight: 300;
+        }
+    }
+}

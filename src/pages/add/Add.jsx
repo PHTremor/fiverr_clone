@@ -1,10 +1,73 @@
-import React from 'react'
-import "./Add.scss"
+import React from "react";
+import "./Add.scss";
 
 function Add() {
   return (
-    <div>Add</div>
-  )
+    <div className="add">
+      <div className="container">
+        <h1>Add New Gig</h1>
+        <div className="sections">
+          <div className="left">
+            <label htmlFor="">Title</label>
+            <input
+              type="text"
+              placeholder="eg. I will do something I really good at"
+            />
+
+            <label htmlFor="">Category</label>
+            <select name="categories" id="categories">
+              <option value="design">Design</option>
+              <option value="web">Web Development</option>
+              <option value="anime">Animation</option>
+              <option value="music">Music</option>
+            </select>
+
+            <label htmlFor="">Cover Image</label>
+            <input type="file" />
+
+            <label htmlFor="">Upload Images</label>
+            <input type="file" multiple />
+
+            <label htmlFor="">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="16"
+              placeholder="Brief descriptions to introduce your service to customer"
+            ></textarea>
+
+            <button>Create</button>
+          </div>
+          <div className="right">
+            <label htmlFor="">Service Title</label>
+            <input type="text" placeholder="e.g. One-page web design" />
+
+            <label htmlFor="">Short Description</label>
+            <input
+              type="text"
+              placeholder="Short description of your service"
+            />
+
+            <label htmlFor="">Delivery Time(eg. 3 days)</label>
+            <input type="number" min={1} />
+
+            <label htmlFor="">Revison Number</label>
+            <input type="number" min={1} />
+
+            <label htmlFor="">Add Features</label>
+            <input type="text" placeholder="e.g. web design" />
+            <input type="text" placeholder="e.g. file uploading" />
+            <input type="text" placeholder="e.g. setting up a domain" />
+            <input type="text" placeholder="e.g. hosting" />
+
+            <label htmlFor="">Price</label>
+            <input type="number" min={1} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Add
+export default Add;
